@@ -276,6 +276,5 @@ http://ip_de_tu_servidor/info.php o http://dns_de_tu_servidor/info.php
 <a id="item4"></a>
 
 # Instalar FTP
-
-
+Vamos a instalar 
 [Subir](#top)
