@@ -1,4 +1,5 @@
 <a id="top"></a>
+
 # ¿Qué es Amazon EC2?
 
 Amazon Elastic Compute Cloud (Amazon EC2) proporciona capacidad de computación escalable en la nube de Amazon Web Services (AWS). El uso de Amazon EC2 elimina la necesidad de invertir inicialmente en hardware, de manera que puede desarrollar e implementar aplicaciones en menos tiempo. 
@@ -125,6 +126,7 @@ Una vez conectados instalaremos lo siguiente:
 * [Instalar MySQL](#item2)
 * [Instalar PHP](#item3)
 * [Instalar FTP](#item4)
+* [IP elástica](#item5)
 
 
 <a id="item1"></a>
@@ -275,7 +277,7 @@ Ahora podremos ver ese archivo en nuestro navegador escribiendo lo siguiente:
 ![PHP Instalación](Imagenes/PHP/8.JPG)
 
 
-<p><code>http://ip_de_tu_servidor/info.php o http://dns_de_tu_servidor/info.php</code></p>
+<code>http://ip_de_tu_servidor/info.php o http://dns_de_tu_servidor/info.php</code>
 
 
 ![PHP Instalación](Imagenes/PHP/9.JPG)
@@ -287,5 +289,57 @@ Ahora podremos ver ese archivo en nuestro navegador escribiendo lo siguiente:
 <a id="item4"></a>
 
 # Instalar FTP
-Vamos a instalar el servidor FTP
+
+Primero vamos a crear 3 usuarios cliente, servidor y administrador para eso meteromos el siguiente comando.
+
+<code> sudo adduser cliente</code>
+
+![FTP Instalación](Imagenes/FTP/1.JPG)
+
+<code> sudo adduser servidor</code>
+
+![FTP Instalación](Imagenes/FTP/2.JPG)
+
+<code> sudo adduser administrador</code>
+![FTP Instalación](Imagenes/FTP/3.JPG)
+
+Ahora instalaremos el servidor FTP, para ello meteremos el siguiente comando:
+
+<code>sudo apt-get install vsftpd</code>
+
+![FTP Instalación](Imagenes/FTP/4.JPG)
+
+Una vez que haya instalado el paquete, puede ejecutar el servicio y habilitarlo para que se ejecute al iniciar el sistema.
+
+<code>sudo systemctl start vsftpd
+sudo systemctl enable vsftpd</code>
+
+![FTP Instalación](Imagenes/FTP/5.JPG)
+
+Ahora habilitaremos el puerto 21 para el servicio FTP:
+
+![FTP Instalación](Imagenes/FTP/6.JPG)
+
+Por lo ultimo reseteamos el servicio FTP con el sigiente comando
+
+<code>sudo service vsftpd restart</code>
+
+![FTP Instalación](Imagenes/FTP/7.JPG)
+
+
 [Subir](#top)
+
+
+<a id="item5"></a>
+
+# Direcciones IP elásticas
+
+Las direcciones IP elásticas son direcciones IPv4 estáticas diseñadas para la informática en la nube dinámica.
+
+# ¿Para que sirve?
+
+Con una dirección IP elástica, puede enmascarar los errores de una instancia o software volviendo a mapear rápidamente la dirección a otra instancia de su cuenta. Se asigna una dirección IP elástica a su cuenta de AWS, que es suya hasta que la libere.
+
+# Documentación
+
+Primero empezaremos a lanzar una instancia.[Subir](#top)
