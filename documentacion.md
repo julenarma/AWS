@@ -264,10 +264,14 @@ Cuando acabes guarda el archivo con Ctrl+o y sal de el con Ctrl+x.
 
 Ahora podremos ver ese archivo en nuestro navegador escribiendo lo siguiente:
 
+
+![PHP Instalación](Imagenes/PHP/8.JPG)
+
+
 http://ip_de_tu_servidor/info.php o http://dns_de_tu_servidor/info.php
 
 
-![PHP Instalación](Imagenes/PHP/8.JPG)
+![PHP Instalación](Imagenes/PHP/9.JPG)
 
 
 [Subir](#top)
