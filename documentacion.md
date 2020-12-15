@@ -130,13 +130,17 @@ Una vez conectados instalaremos lo siguiente:
 <a id="item1"></a>
 # Instalar Apache2
 
-Antes que nada haremos un update:  sudo apt-get update
+Antes que nada haremos un update con el siguiente comando: 
+
+<code> sudo apt-get update</code>
 
 
 ![Apache Instalación](Imagenes/Apache/1.JPG)
 
 
-Y ahora instalaremos apache. sudo apt-get install apache2
+Y ahora instalaremos apache con el sigueinte comando:
+
+<code>sudo apt-get install apache2</code>
 
 
 ![Apache Instalación](Imagenes/Apache/2.JPG)
@@ -154,13 +158,15 @@ Una vez aquí clickaremos en Edit:
 
 
 Para acabar, con Add rule añadiremos una regla nueva donde seleccionaremos HTTP en la sección de tipo. Repite este paso para añadir HTTPS:
+
+
 ![Apache Instalación](Imagenes/Apache/5.JPG)
 
 ![Apache Instalación](Imagenes/Apache/6.JPG)
 
 Ahora ya podemos comprobar si la instalación del Apache2 se ha hecho de manera correcta, para ello escribe lo siguiente en tu navegador:
 
-http://ip_de_tu_servidor o http://dns_de_tu_servidor
+<code>http://ip_de_tu_servidor o http://dns_de_tu_servidor</code>
 
 
 ![Apache Instalación](Imagenes/Apache/7.JPG)
@@ -172,13 +178,14 @@ Puedes encontrar tu ip o dns en esta sección una vez que la máquina está ence
 
 [Subir](#top)
 
+
 <a id="item2"></a>
 
 # Instalar MySQL
 
 Instalaremos MySQL, para ello usaremos este comando: 
 
-sudo apt-get install mysql-server mysql-client
+<code>sudo apt-get install mysql-server mysql-client</code>
 
 ![MYSQL Instalación](Imagenes/MYSQL/1.JPG)
 
@@ -186,11 +193,10 @@ Con este comando instalaremos tanto el servidor como el cliente de MySQL.
 
 Al finalizar la instalación ejecutaremos el siguiente comando:
 
+<code>sudo mysql_secure_installation</code>
 
-sudo mysql_secure_installation
 
 ![MYSQL Instalación](Imagenes/MYSQL/2.JPG)
-
 
 Con este comando borraremos algunos parametros peligrosos y aseguraremos el acceso ala base de datos.
 
@@ -199,13 +205,14 @@ Después te pedirá que completes unos pasos. Hazlo de la siguiente manera:
 
 ![MYSQL Instalación](Imagenes/MYSQL/3.JPG)
 
+
 ![MYSQL Instalación](Imagenes/MYSQL/4.JPG)
 
 
 
-Si quisieras comprobar tu versión de MySQL puedes hacerlo con esté comando:
+Si quisieramos comprobar tu versión de MySQL puedes hacerlo con esté comando:
 
-mysql --version
+<code>mysql --version</code>
 
 
 ![MYSQL Instalación](Imagenes/MYSQL/5.JPG)
@@ -219,7 +226,7 @@ mysql --version
 
 Ahora toca instalar PHP, para ello comenzaremos con el comando de instalación de nuevo:
 
-sudo apt install php libapache2-mod-php php-mysql
+<code>sudo apt install php libapache2-mod-php php-mysql</code>
 
 ![PHP Instalación](Imagenes/PHP/1.JPG)
 
@@ -227,7 +234,7 @@ Si tus archivos van a ser de tipo .php es recomendable que modifiques el archivo
 
 Para conseguir esto ejecutaremos el siguiente comando:
 
-sudo nano /etc/apache2/mods-enabled/dir.conf
+<code>sudo nano /etc/apache2/mods-enabled/dir.conf</code>
 
 
 ![PHP Instalación](Imagenes/PHP/2.JPG)
@@ -242,17 +249,17 @@ Cambiaremos de sitio el archivo index.php colocándolo en primer lugar y lo guar
 
 Seguidamente reiniciaremos el servicio de Apache2 para que los cambios se efectuen:
 
-sudo systemctl restart apache2
+<code>sudo systemctl restart apache2</code>
 
 
 ![PHP Instalación](Imagenes/PHP/5.JPG)
 
-Una vez reiniciado comprobaremos el estado del servicio con este otro comando:
 
+Una vez reiniciado comprobaremos el estado del servicio con este otro comando:
 
 Ahora comprobaremos que estos cambios son eficaces. Para esto, crearemos un archivo de tipo .php, el mas útil de ellos es info.php:
 
-sudo nano /var/www/html/info.php
+<code>sudo nano /var/www/html/info.php</code>
 
 ![PHP Instalación](Imagenes/PHP/6.JPG)
 
@@ -268,7 +275,7 @@ Ahora podremos ver ese archivo en nuestro navegador escribiendo lo siguiente:
 ![PHP Instalación](Imagenes/PHP/8.JPG)
 
 
-http://ip_de_tu_servidor/info.php o http://dns_de_tu_servidor/info.php
+<code>http://ip_de_tu_servidor/info.php o http://dns_de_tu_servidor/info.php</code>
 
 
 ![PHP Instalación](Imagenes/PHP/9.JPG)
