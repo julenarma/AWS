@@ -275,7 +275,7 @@ Ahora podremos ver ese archivo en nuestro navegador escribiendo lo siguiente:
 ![PHP Instalación](Imagenes/PHP/8.JPG)
 
 
-<code>http://ip_de_tu_servidor/info.php o http://dns_de_tu_servidor/info.php</code>
+<p><code>http://ip_de_tu_servidor/info.php o http://dns_de_tu_servidor/info.php</code></p>
 
 
 ![PHP Instalación](Imagenes/PHP/9.JPG)
