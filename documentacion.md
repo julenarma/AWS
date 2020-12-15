@@ -178,8 +178,6 @@ Puedes encontrar tu ip o dns en esta sección una vez que la máquina está ence
 ![Apache Instalación](Imagenes/Apache/8.JPG)
 
 
-[Subir](#top)
-
 
 <a id="item2"></a>
 
@@ -220,7 +218,6 @@ Si quisieramos comprobar tu versión de MySQL puedes hacerlo con esté comando:
 ![MYSQL Instalación](Imagenes/MYSQL/5.JPG)
 
 
-[Subir](#top)
 
 <a id="item3"></a>
 
@@ -283,7 +280,7 @@ Ahora podremos ver ese archivo en nuestro navegador escribiendo lo siguiente:
 ![PHP Instalación](Imagenes/PHP/9.JPG)
 
 
-[Subir](#top)
+
 
 
 <a id="item4"></a>
@@ -327,9 +324,6 @@ Por lo ultimo reseteamos el servicio FTP con el sigiente comando
 ![FTP Instalación](Imagenes/FTP/7.JPG)
 
 
-[Subir](#top)
-
-
 <a id="item5"></a>
 
 # Direcciones IP elásticas
@@ -342,4 +336,27 @@ Con una dirección IP elástica, puede enmascarar los errores de una instancia o
 
 # Documentación
 
-Primero empezaremos a lanzar una instancia.[Subir](#top)
+Para asignar una dirección IP elástica desde un grupo de direcciones IPv4 públicas de Amazon utilizando la consola:
+
+- Abra la consola de Amazon EC2 en https:// console.aws.amazon.com/ec2/.
+
+- En el panel de navegación, elija Elastic IPs (Direcciones IP elásticas).
+
+- Elija Allocate new address (Asignar nueva dirección).
+
+
+![IP_ELASTICA](Imagenes/IP_ELASTICA/1.JPG)
+
+En IPv4 address pool (Grupo de direcciones IPv4), elija Amazon pool (Grupo de Amazon).
+
+![IP_ELASTICA](Imagenes/IP_ELASTICA/2.JPG)
+
+Elija Allocate (Asignar) y cierre la pantalla de confirmación.
+
+![IP_ELASTICA](Imagenes/IP_ELASTICA/3.JPG)
+
+Aquí sale un resumen de nuestra IP alocada:
+
+![IP_ELASTICA](Imagenes/IP_ELASTICA/4.JPG)
+
+[Subir](#top)
