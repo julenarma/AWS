@@ -126,8 +126,7 @@ Una vez conectados instalaremos lo siguiente:
 * [Instalar MySQL](#item2)
 * [Instalar PHP](#item3)
 * [Instalar FTP](#item4)
-* [IP Elástica](#item5)
-* [DNS](#item6)
+
 
 
 <a id="item1"></a>
@@ -326,7 +325,6 @@ Por lo ultimo reseteamos el servicio FTP con el sigiente comando
 ![FTP Instalación](Imagenes/FTP/7.JPG)
 
 
-<a id="item5"></a>
 
 # Direcciones IP elásticas
 
@@ -364,7 +362,6 @@ Aquí sale un resumen de nuestra IP alocada:
 [Subir](#top)
 
 
-<a id="item6"></a>
 
 
 # DNS
@@ -394,7 +391,7 @@ PTR = Indicador (pointer). También conocido como 'registro inverso', funciona a
 
 Crearemos un registro DNS para nuestro servidor, para ello accederemos al panel del subdominio y entraremos en registro DNS.
 
-
+![IP_ELASTICA](Imagenes/DNS/1.JPG)
 
 
 
