@@ -126,7 +126,8 @@ Una vez conectados instalaremos lo siguiente:
 * [Instalar MySQL](#item2)
 * [Instalar PHP](#item3)
 * [Instalar FTP](#item4)
-* [IP elástica](#item5)
+* [IP Elástica](#item5)
+* [DNS](#item6)
 
 
 <a id="item1"></a>
@@ -298,6 +299,7 @@ Primero vamos a crear 3 usuarios cliente, servidor y administrador para eso mete
 ![FTP Instalación](Imagenes/FTP/2.JPG)
 
 <code> sudo adduser administrador</code>
+
 ![FTP Instalación](Imagenes/FTP/3.JPG)
 
 Ahora instalaremos el servidor FTP, para ello meteremos el siguiente comando:
@@ -360,3 +362,39 @@ Aquí sale un resumen de nuestra IP alocada:
 ![IP_ELASTICA](Imagenes/IP_ELASTICA/4.JPG)
 
 [Subir](#top)
+
+
+<a id="item6"></a>
+
+
+# DNS
+
+Los registros DNS son diferentes cadenas de letras que se utilizan para indicar ciertas acciones al servidor DNS. Estas letras también son conocidas como sintaxis de DNS.
+
+# ¿Para que sirve?
+
+Los DNS sirven para indicarle al usuario que teclea un dominio a que servidor debe ir a recoger la página web que desea consultar.
+
+# Tipos de DNS
+
+Los tipos de registros más utilizados son:
+
+- A = Dirección (address). Este registro se usa para traducir nombres de servidores de alojamiento a direcciones IPv4.
+- AAAA = Dirección (address). Este registro se usa en IPv6 para traducir nombres de hosts a direcciones IPv6.
+CNAME = Nombre canónico (canonical Name). Se usa para crear nombres de servidores de alojamiento adicionales, o alias, para los servidores de alojamiento de un dominio. Es usado cuando se están corriendo múltiples servicios (como FTP y servidor web) en un servidor con una sola dirección IP. Cada servicio tiene su propia entrada de DNS (como ftp.ejemplo.com. y www.ejemplo.com.). Esto también es usado cuando corres múltiples servidores HTTP, con diferentes nombres, sobre el mismo host. Se escribe primero el alias y luego el nombre real. Ej. Ejemplo1 IN CNAME ejemplo2
+- NS = Servidor de nombres (name server). Define la asociación que existe entre un nombre de dominio y los servidores de nombres que almacenan la información de dicho dominio. Cada dominio se puede asociar a una cantidad cualquiera de servidores de nombres.
+- MX = Intercambio de correo (mail exchange). Asocia un nombre de dominio a una lista de servidores de intercambio de correo para ese dominio. Tiene un balanceo de carga y prioridad para el uso de uno o más servicios de correo.
+PTR = Indicador (pointer). También conocido como 'registro inverso', funciona a la inversa del registro A, traduciendo IPs en nombres de dominio. Se usa en el archivo de configuración de la zona DNS inversa.
+- SOA = Autoridad de la zona (start of authority). Proporciona información sobre el servidor DNS primario de la zona.
+- SRV = Service record (SRV record).
+- ANY = Toda la información de todos los tipos que exista. (No es un tipo de registro, sino un tipo de consulta)
+
+
+# Gestión de DNS
+
+Crearemos un registro DNS para nuestro servidor, para ello accederemos al panel del subdominio y entraremos en registro DNS.
+
+
+
+
+
