@@ -1,5 +1,6 @@
 <a id="top"></a>
 
+# Ejercicio 1. EC2.
 # ¿Qué es Amazon EC2?
 
 Amazon Elastic Compute Cloud (Amazon EC2) proporciona capacidad de computación escalable en la nube de Amazon Web Services (AWS). El uso de Amazon EC2 elimina la necesidad de invertir inicialmente en hardware, de manera que puede desarrollar e implementar aplicaciones en menos tiempo. 
@@ -111,6 +112,7 @@ Para detener la instancia, le daremos al botón de acciones y le damos a detener
 
 ![Imagen 18](Imagenes/AWS/18.JPG)
 
+# Ejercicio 2. Instalando aplicaciones. 
 
 # Instalacion de APACHE2, MYSQL, PHP Y FTP.
 
@@ -282,10 +284,6 @@ Ahora podremos ver ese archivo en nuestro navegador escribiendo lo siguiente:
 
 ![PHP Instalación](Imagenes/PHP/9.JPG)
 
-
-
-
-
 <a id="item4"></a>
 
 # Instalar FTP
@@ -327,7 +325,7 @@ Por lo ultimo reseteamos el servicio FTP con el sigiente comando
 
 ![FTP Instalación](Imagenes/FTP/7.JPG)
 
-## Ejercicio 3. IP elástica.
+# Ejercicio 3. IP elástica.
 
 # Direcciones IP elásticas
 
