@@ -324,7 +324,7 @@ Por lo ultimo reseteamos el servicio FTP con el sigiente comando
 
 ![FTP Instalación](Imagenes/FTP/7.JPG)
 
-
+## Ejercicio 3. IP elástica.
 
 # Direcciones IP elásticas
 
@@ -362,9 +362,9 @@ Aquí sale un resumen de nuestra IP alocada:
 [Subir](#top)
 
 
+# Ejercicio 4. DNS. 
 
-
-# DNS
+# ¿QUÉ ES?
 
 Los registros DNS son diferentes cadenas de letras que se utilizan para indicar ciertas acciones al servidor DNS. Estas letras también son conocidas como sintaxis de DNS.
 
@@ -394,4 +394,34 @@ Crearemos un registro DNS para nuestro servidor, para ello accederemos al panel 
 ![IP_ELASTICA](Imagenes/DNS/1.JPG)
 
 
+# Ejercicio 5. DNS. 
+
+# Documentación: 
+
+- ¿Cuántos servidores DNS existen?
+  
+Una de las creencias muy extendidas en el mundo de las redes es que existen en el mundo sólo 13 root servers, esto es, 13 servidores encargados de almacenar información sobre los dominios de primer nivel (o Top Level Domain TLD) en el sistema de nombre de dominio (DNS) utilizado en Internet.
+
+- ¿Cuántas redirecciones DNS son posibles?
+
+- ¿Qué son los servidores DNS Raíz?
+
+El directorio raíz de un dominio es la carpeta a la que apunta el dominio, que contiene los ficheros y carpetas de la web que carga dicho dominio. En cpanel, el dominio principal apunta a la carpeta public_html de tu cuenta. Si quieres puedes apuntar el dominio principal a otra carpeta
+
+
+El directorio raíz de un dominio es la carpeta a la que apunta el dominio, que contiene los ficheros y carpetas de la web que carga dicho dominio. En cpanel, el dominio principal apunta a la carpeta public_html de tu cuenta. Si quieres puedes apuntar el dominio principal a otra carpeta.
+
+
+- ¿Para qué montar un servidor si simplemente escribiendo en un fichero la relación IP/Nombre el sistema ya funcionaría?
+
+
+- Según lo expuesto, y si en tu configuración de red del sistema operativo solamente posees un servidor DNS, entonces: ¿cuál sería el proceso para encontrar la IP de la dirección web: http://www.debian.org/distrib/netinst?
+  
+
+- ¿Es posible si dispones de una conexión a Internet con IP dinámica ofrecer servicios en Internet? Es decir, si quieres ofrecer los servicios SND, no dispones de IP estática, esto es, cada vez que te conectas a Internet tu IP, aunque a veces sea la misma, no siempre es la misma. 
+  
+
+- ¿Qué es ICANN?
+
+ICANN es una entidad internacional sin ánimo de lucro responsable de alojar direcciones IP, gestionar dominios genéricos y territoriales, y asignar identificadores de protocolos.
 
