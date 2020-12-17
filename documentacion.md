@@ -28,7 +28,7 @@ Elegimos un tipo de instancia y le damos a siguiente:
 
 ![Imagen 3](https://github.com/julenarma/AWS/blob/main/Imagenes/AWS/3.JPG?raw=true)
 
-Esta página es para configurar las instancias, dejamos como están y damos a siguiente.
+Esta página es para configurar las instancias, dejamos como está y damos a siguiente.
 
 
 ![Imagen 4](https://github.com/julenarma/AWS/blob/main/Imagenes/AWS/4.JPG?raw=true)
@@ -57,7 +57,7 @@ Revisamos si esta todo correcto y le damos a launch.
 ![Imagen 8](https://github.com/julenarma/AWS/blob/main/Imagenes/AWS/8.JPG?raw=true)
 
 
-En esta ventana tendremos la opción de crear una llave o escoger una existente, en mi caso creare una nueva y llamaré clave2. Esta key tendremos que guardar en un sitio seguro, ya que luego la necesitaremos.
+En esta ventana tendremos la opción de crear una llave o escoger una existente, en mi caso crearé una nueva y llamaré clave2. Esta key tendremos que guardar en un sitio seguro, ya que luego la necesitaremos.
 
 
 ![Imagen 9](https://github.com/julenarma/AWS/blob/main/Imagenes/AWS/9.JPG?raw=true)
@@ -102,20 +102,14 @@ Ya estaríamos conectados a la instancia. Podemos comprobar en la página de AWS
 ![Imagen 16](https://github.com/julenarma/AWS/blob/main/Imagenes/AWS/16.JPG?raw=true)
 
 
-Como podemos ver, ya estaríamos conectados a la instancia.
+Como podemos ver, ya estaríamos conectados a la instancia. Para detener la instancia, le daremos al botón de acciones y le damos a detener instancia.
 
 
-![Imagen 17](https://github.com/julenarma/AWS/blob/main/Imagenes/AWS/17.JPG?raw=true)
-
-
-Para detener la instancia, le daremos al botón de acciones y le damos a detener instancia.
-
-
-![Imagen 18](https://github.com/julenarma/AWS/blob/main/Imagenes/AWS/18.JPG?raw=true)
+![Imagen 18](https://github.com/julenarma/AWS/blob/main/Imagenes/AWS/17.JPG?raw=true)
 
 # Ejercicio 2. Instalando aplicaciones. 
 
-# Instalacion de APACHE2, MYSQL, PHP Y FTP.
+## Instalacion de APACHE2, MYSQL, PHP Y FTP.
 
 Primero tenemos que abrir una consola donde tengamos nuestra clave privada y darle permisos: chmod 400 clave2.pem.
 
@@ -141,7 +135,7 @@ Antes que nada haremos un update con el siguiente comando:
 ![Apache Instalación](https://github.com/julenarma/AWS/blob/main/Imagenes/Apache/1.JPG?raw=true)
 
 
-Y ahora instalaremos apache con el sigueinte comando:
+Y ahora instalaremos apache con el siguiente comando:
 
 ``sudo apt-get install apache2``
 
@@ -160,7 +154,7 @@ Una vez aquí clickaremos en Edit:
 ![Apache Instalación](https://github.com/julenarma/AWS/blob/main/Imagenes/Apache/4.jpg?raw=true)
 
 
-Para acabar, con Add rule añadiremos una regla nueva donde seleccionaremos HTTP en la sección de tipo. Repite este paso para añadir HTTPS:
+Para acabar, con Add rule añadiremos una regla nueva donde seleccionaremos HTTP en la sección de tipo. Repetimos este paso para añadir HTTPS:
 
 
 ![Apache Instalación](https://github.com/julenarma/AWS/blob/main/Imagenes/Apache/5.JPG?raw=true)
@@ -168,14 +162,14 @@ Para acabar, con Add rule añadiremos una regla nueva donde seleccionaremos HTTP
 
 ![Apache Instalación](https://github.com/julenarma/AWS/blob/main/Imagenes/Apache/6.JPG?raw=true)
 
-Ahora ya podemos comprobar si la instalación del Apache2 se ha hecho de manera correcta, para ello escribe lo siguiente en tu navegador:
+Ahora ya podemos comprobar si la instalación del Apache2 se ha hecho de manera correcta, para ello escribimos lo siguiente en tu navegador:
 
 ``http://ip_de_tu_servidor o http://dns_de_tu_servidor``
 
 
 ![Apache Instalación](https://github.com/julenarma/AWS/blob/main/Imagenes/Apache/7.JPG?raw=true)
 
-Puedes encontrar tu ip o dns en esta sección una vez que la máquina está encendida:
+Podemos encontrar la ip o dns en esta sección una vez que la máquina está encendida:
 
 ![Apache Instalación](https://github.com/julenarma/AWS/blob/main/Imagenes/Apache/8.JPG?raw=true)
 
@@ -198,9 +192,9 @@ Al finalizar la instalación ejecutaremos el siguiente comando:
 
 ![MYSQL Instalación](https://github.com/julenarma/AWS/blob/main/Imagenes/MYSQL/2.JPG?raw=true)
 
-Con este comando borraremos algunos parametros peligrosos y aseguraremos el acceso ala base de datos.
+Con este comando borraremos algunos parametros peligrosos y aseguraremos el acceso a la base de datos.
 
-Después te pedirá que completes unos pasos. Hazlo de la siguiente manera:
+Después nos pedirá que completemos unos pasos. Lo haremos de la siguiente manera:
 
 
 ![MYSQL Instalación](https://github.com/julenarma/AWS/blob/main/Imagenes/MYSQL/3.JPG?raw=true)
@@ -210,7 +204,7 @@ Después te pedirá que completes unos pasos. Hazlo de la siguiente manera:
 
 
 
-Si quisieramos comprobar la versión de MySQL puedes hacerlo con esté comando:
+Si quisieramos comprobar la versión de MySQL podemos hacerlo con esté comando:
 
 ``mysql --version``
 
@@ -238,7 +232,7 @@ Para conseguir esto ejecutaremos el siguiente comando:
 
 ![PHP Instalación](https://github.com/julenarma/AWS/blob/main/Imagenes/PHP/2.JPG?raw=true)
 
-Con esto te saldra algo como esto:
+Con esto te saldrá algo como esto:
 
 ![PHP Instalación](https://github.com/julenarma/AWS/blob/main/Imagenes/PHP/3.JPG?raw=true)
 
@@ -253,7 +247,6 @@ Seguidamente reiniciaremos el servicio de Apache2 para que los cambios se efectu
 
 ![PHP Instalación](https://github.com/julenarma/AWS/blob/main/Imagenes/PHP/5.JPG?raw=true)
 
-
 Una vez reiniciado comprobaremos el estado del servicio con este otro comando:
 
 ``sudo systemctl status apache2``
@@ -264,18 +257,15 @@ Ahora comprobaremos que estos cambios son eficaces. Para esto, crearemos un arch
 
 ``sudo nano /var/www/html/info.php``
 
-
 Esto creará una página en blanco donde escribiremos el siguiente código:
 
 ![PHP Instalación](https://github.com/julenarma/AWS/blob/main/Imagenes/PHP/7.JPG?raw=true)
 
-Cuando acabes guarda el archivo con Ctrl+o y sal de el con Ctrl+x.
-
-Ahora podremos ver ese archivo en nuestro navegador escribiendo lo siguiente:
-
-
 ![PHP Instalación](https://github.com/julenarma/AWS/blob/main/Imagenes/PHP/8.JPG?raw=true)
 
+Cuando acabemos guardamos el archivo con Ctrl+o y salimos con Ctrl+x.
+
+Ahora podremos ver ese archivo en nuestro navegador escribiendo lo siguiente:
 
 ``http://ip_de_tu_servidor/info.php o http://dns_de_tu_servidor/info.php``
 
@@ -286,9 +276,9 @@ Ahora podremos ver ese archivo en nuestro navegador escribiendo lo siguiente:
 
 # Instalar FTP
 
-Primero vamos a crear 3 usuarios cliente, servidor y administrador para eso meteromos el siguiente comando.
+Primero vamos a crear 3 usuarios cliente, servidor y administrador para eso utilizaremos el siguiente comando.
 
-<code> sudo adduser cliente</code>
+``sudo adduser cliente``
 
 ![FTP Instalación](https://github.com/julenarma/AWS/blob/main/Imagenes/FTP/1.JPG?raw=true)
 
@@ -306,7 +296,7 @@ Ahora instalaremos el servidor FTP, para ello meteremos el siguiente comando:
 
 ![FTP Instalación](https://github.com/julenarma/AWS/blob/main/Imagenes/FTP/4.JPG?raw=true)
 
-Una vez que haya instalado el paquete, puede ejecutar el servicio y habilitarlo para que se ejecute al iniciar el sistema.
+Una vez que haya instalado el paquete, podemos ejecutar el servicio y habilitarlo para que se ejecute al iniciar el sistema.
 
 ``sudo systemctl start vsftpd``
 
@@ -338,20 +328,20 @@ Con una dirección IP elástica, puede enmascarar los errores de una instancia o
 
 Para asignar una dirección IP elástica desde un grupo de direcciones IPv4 públicas de Amazon utilizando la consola:
 
-- Abra la consola de Amazon EC2 en https:// console.aws.amazon.com/ec2/.
+- Abrimos la consola de Amazon EC2 en https://console.aws.amazon.com/ec2/.
 
-- En el panel de navegación, elija Elastic IPs (Direcciones IP elásticas).
+- En el panel de navegación, elejimos Elastic IPs (Direcciones IP elásticas).
 
-- Elija Allocate new address (Asignar nueva dirección).
+- Elejimos Allocate new address (Asignar nueva dirección).
 
 
 ![IP_ELASTICA](https://github.com/julenarma/AWS/blob/main/Imagenes/IP_ELASTICA/1.JPG?raw=true)
 
-En IPv4 address pool (Grupo de direcciones IPv4), elija Amazon pool (Grupo de Amazon).
+En IPv4 address pool (Grupo de direcciones IPv4), elejimos Amazon pool (Grupo de Amazon).
 
 ![IP_ELASTICA](https://github.com/julenarma/AWS/blob/main/Imagenes/IP_ELASTICA/2.JPG?raw=true)
 
-Elija Allocate (Asignar) y cierre la pantalla de confirmación.
+Elejimos Allocate (Asignar) y cerramos la pantalla de confirmación.
 
 ![IP_ELASTICA](https://github.com/julenarma/AWS/blob/main/Imagenes/IP_ELASTICA/3.JPG?raw=true)
 
@@ -359,12 +349,13 @@ Aquí sale un resumen de nuestra IP alocada:
 
 ![IP_ELASTICA](https://github.com/julenarma/AWS/blob/main/Imagenes/IP_ELASTICA/4.JPG?raw=true)
 
+
 [Subir](#top)
 
 
 # Ejercicio 4. DNS. 
 
-## ¿QUÉ ES?
+## ¿Qué es?
 
 - Sistema en general en el que está basado el funcionamiento de los dominios en Internet: una red mundial de servidores que traducen nombres que tú como humano entiendes, a direcciones IP que las máquinas entienden.
 
@@ -418,21 +409,20 @@ Una de las creencias muy extendidas en el mundo de las redes es que existen en e
 
 ## ¿Cuántas redirecciones DNS son posibles?
 
-Root Server. Como en cualquier jerarquía, cuando hablamos de servidor DNS tiene que existir un nivel superior, un punto en el que una consulta no contestada no pueda subir más y tenga que ser resuelta de un modo u otro. En este nivel superior la consulta será resuelta por un Root Server.
+Zona de Búsqueda Directa: Las resoluciones de esta zona devuelven la dirección IP
+correspondiente al recurso solicitado. Realiza las resoluciones que esperan como respuesta la dirección IP un determinado recurso.
 
-
-TLD. Significa “Top Level Domain”. Siguiendo con el ejemplo, el TLD de miweb.es es “.es”. Se trata del dominio “padre”, y es responsabilidad de alguna entidad nacional o internacional que se encarga de gestionar los servidores de nombres que tienen información sobre esta extensión. Por ejemplo, los dominios .es son responsabilidad de nic.es, los .com son responsabilidad de Verisign, etc …
-
-
+Zona de Búsqueda Inversa: Las resoluciones de esta zona buscan un nombre de
+equipo en función de su dirección IP; una búsqueda inversa tiene forma de pregunta, del
+estilo.
 ## ¿Qué son los servidores DNS Raíz?
 
 El directorio raíz de un dominio es la carpeta a la que apunta el dominio, que contiene los ficheros y carpetas de la web que carga dicho dominio. En cpanel, el dominio principal apunta a la carpeta public_html de tu cuenta. Si quieres puedes apuntar el dominio principal a otra carpeta.
 
-
 ## ¿Para qué montar un servidor si simplemente escribiendo en un fichero la relación IP/Nombre el sistema ya funcionaría?
 
-Cada equipo conectado directamente a Internet tiene al menos una dirección IP específica. Sin embargo, los usuarios no desean trabajar con direcciones numéricas, como por
-ejemplo 194.153.205.26, sino con un nombre de dominio o más específicamente, con direcciones (llamadas direcciones FQDN) como por ejemplo es.kioskea.net. 
+Cada equipo conectado directamente a Internet tiene al menos una dirección IP específica. Sin embargo, los usuarios no desean trabajar con direcciones numéricas por la dificultad de recordar las series numéricas, como por ejemplo 194.153.205.26, sino con un nombre de dominio o más específicamente, con direcciones como por ejemplo grupo1.zerbitzaria.net. 
+Es por este motivo por el que las direcciones IP se “traducen” en nombres que podamos recordar, los llamados dominios:
 
 ## Según lo expuesto, y si en tu configuración de red del sistema operativo solamente posees un servidor DNS, entonces: ¿cuál sería el proceso para encontrar la IP de la dirección web: http://www.debian.org/distrib/netinst?
   
