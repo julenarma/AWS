@@ -256,11 +256,14 @@ Seguidamente reiniciaremos el servicio de Apache2 para que los cambios se efectu
 
 Una vez reiniciado comprobaremos el estado del servicio con este otro comando:
 
+<code>sudo systemctl status apache2</code>
+
+![PHP Instalación](Imagenes/PHP/6.JPG)
+
 Ahora comprobaremos que estos cambios son eficaces. Para esto, crearemos un archivo de tipo .php, el mas útil de ellos es info.php:
 
 <code>sudo nano /var/www/html/info.php</code>
 
-![PHP Instalación](Imagenes/PHP/6.JPG)
 
 Esto creará una página en blanco donde escribiremos el siguiente código:
 
@@ -389,9 +392,20 @@ PTR = Indicador (pointer). También conocido como 'registro inverso', funciona a
 
 # Gestión de DNS
 
-Crearemos un registro DNS para nuestro servidor, para ello accederemos al panel del subdominio y entraremos en registro DNS.
+Para empezar, en la página principal de Guebs iremos a Registro DNS.
 
 ![IP_ELASTICA](Imagenes/DNS/1.JPG)
+
+TIPOS DE REGISTROS
+Tipo A: Con este tipo asociamos un nombre a una dirección IP IPv4 para buscar esa direccón mediante un nombre en vez de una IP.
+
+Tipo AAAA: Este tipo es exactamente igual que el anterior pero para direcciones IPv6.
+
+Tipo CNAME: Se utiliza para asociar un nombre a una url para correr diferentes servicios (FTP y servidor web) con una sola dirección.
+
+Tipo TXT: Con este tipo asociamos un nombre a texto plano que contiene información externa a tu página.
+
+Tipo SRV: Es utilizado para asociar un nombre a un servicio.
 
 
 # Ejercicio 5. DNS. 
@@ -409,17 +423,16 @@ Una de las creencias muy extendidas en el mundo de las redes es que existen en e
 El directorio raíz de un dominio es la carpeta a la que apunta el dominio, que contiene los ficheros y carpetas de la web que carga dicho dominio. En cpanel, el dominio principal apunta a la carpeta public_html de tu cuenta. Si quieres puedes apuntar el dominio principal a otra carpeta
 
 
-El directorio raíz de un dominio es la carpeta a la que apunta el dominio, que contiene los ficheros y carpetas de la web que carga dicho dominio. En cpanel, el dominio principal apunta a la carpeta public_html de tu cuenta. Si quieres puedes apuntar el dominio principal a otra carpeta.
-
-
 - ¿Para qué montar un servidor si simplemente escribiendo en un fichero la relación IP/Nombre el sistema ya funcionaría?
 
 
 - Según lo expuesto, y si en tu configuración de red del sistema operativo solamente posees un servidor DNS, entonces: ¿cuál sería el proceso para encontrar la IP de la dirección web: http://www.debian.org/distrib/netinst?
   
+ pasos desde que yo doy una url para que devuelva una id 
 
 - ¿Es posible si dispones de una conexión a Internet con IP dinámica ofrecer servicios en Internet? Es decir, si quieres ofrecer los servicios SND, no dispones de IP estática, esto es, cada vez que te conectas a Internet tu IP, aunque a veces sea la misma, no siempre es la misma. 
   
+
 
 - ¿Qué es ICANN?
 
