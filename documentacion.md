@@ -11,7 +11,7 @@ Se puede usar Amazon EC2 para lanzar tantos servidores virtuales como necesite, 
 
 ## Documentación
 
-\* Primero empezaremos a lanzar una instancia. \*
+ Primero empezaremos a lanzar una instancia. 
 
 
 ![Imagen 1](https://github.com/julenarma/AWS/blob/main/Imagenes/AWS/1.JPG?raw=true)
