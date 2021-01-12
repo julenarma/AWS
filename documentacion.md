@@ -409,12 +409,11 @@ Una de las creencias muy extendidas en el mundo de las redes es que existen en e
 
 ## ¿Cuántas redirecciones DNS son posibles?
 
-Zona de Búsqueda Directa: Las resoluciones de esta zona devuelven la dirección IP
-correspondiente al recurso solicitado. Realiza las resoluciones que esperan como respuesta la dirección IP un determinado recurso.
+No existe un número limitado de redirección de consultas, lo que sucede es que las consultas se van
+escalando hasta encontrar un servidor DNS que las resuelva, y escalando y escalando puede ser que las
+consultas se resuelvan en los últimos servidores DNS a los cuales se puede preguntar: los servidores
+raíz.
 
-Zona de Búsqueda Inversa: Las resoluciones de esta zona buscan un nombre de
-equipo en función de su dirección IP; una búsqueda inversa tiene forma de pregunta, del
-estilo.
 ## ¿Qué son los servidores DNS Raíz?
 
 El directorio raíz de un dominio es la carpeta a la que apunta el dominio, que contiene los ficheros y carpetas de la web que carga dicho dominio. En cpanel, el dominio principal apunta a la carpeta public_html de tu cuenta. Si quieres puedes apuntar el dominio principal a otra carpeta.
@@ -442,9 +441,74 @@ Es por este motivo por el que las direcciones IP se “traducen” en nombres qu
    
 ## ¿Es posible si dispones de una conexión a Internet con IP dinámica ofrecer servicios en Internet? Es decir, si quieres ofrecer los servicios SND, no dispones de IP estática, esto es, cada vez que te conectas a Internet tu IP, aunque a veces sea la misma, no siempre es la misma. 
   
-Si, pero no es recomendable ya que estaríamos cada dos por tres cambiando de dirección IP, y nos resultaría muy incómodo.
+Lo único que necesitarías sería:
+1. Recoger la IP de tu conexión cada vez que te conectas en Internet.
+2. Una vez recogida tu IP difundirla en Internet. Para difundirla, o bien lo haces de forma estática, y
+cada vez que la recoges te preocupas de hacer los cambios necesarios para difundirla, o bien de forma
+dinámica configuras un programa para que automáticamente recoja la IP y la difunda.
+
 
 ## ¿Qué es ICANN?
 
 ICANN es una entidad internacional sin ánimo de lucro responsable de alojar direcciones IP, gestionar dominios genéricos y territoriales, y asignar identificadores de protocolos.
+
+# Ejercicio 6. CRONTAB. 
+
+## Documentación: 
+
+## ¿Qué es CRON?
+
+Es un administrador de procesos en segundo plano (demonio) que se ejecuta
+cuando arranca el sistema. Comprueba si existe alguna tarea (job) para ser
+ejecutado de acuerdo a la hora configurada en el sistema.
+
+## ¿Qué es CRONTAB?
+
+Es un archivo de texto que contiene la lista de comandos que se deben ejecutar.
+Crontab verificará la fecha y hora en que se debe ejecutar el script o comando,
+los permisos de ejecución y lo ejecutará en segundo plano.
+
+## ¿Qué hace cada línea de cron?
+
+``30 * * * * /home/prueba.sh  `` :  Cada hora en el minuto 30
+
+`` 30 20 * * * /home/prueba.sh  `` : Todos los días a las 20:30h
+
+`` 30 20 * * 1-5 /home/prueba.sh`` : De Lunes a Viernes a las 20:30h
+
+``30 20 * * 2,4 /home/prueba.sh  `` : Martes y Jueves a las 20:30h
+
+`` 30 20 10,20 * * /home/prueba.sh `` : Los días 10 y 20 de cada mes, a las 20:30
+
+``*/15 * * * * /home/prueba.sh `` : Todos los días cada 15 minutos
+
+``@daily /home/prueba.sh  `` : Una vez al día
+
+``@mountly /etc/backup.sh `` : Una vez al mes
+
+``30 20 * * Mon-Fri /etc/test.sh  `` : De Lunes a Viernes a las 20:30
+
+``1 0 1-7 * * [ "$(date '+%a')" = "Fri" ] && /etc/backup.sh `` : A las 00:01 de todos los días del mes 
+entre el 1 y 7 ejecuta el algoritmo.
+
+# Ejercicio 7. CRONTAB. 
+
+## Documentación:
+
+![Crontab](https://github.com/julenarma/AWS/blob/main/Imagenes/CRONTAB/1.JPG?raw=true)
+
+![Crontab](https://github.com/julenarma/AWS/blob/main/Imagenes/CRONTAB/2.JPG?raw=true)
+
+![Crontab](https://github.com/julenarma/AWS/blob/main/Imagenes/CRONTAB/3.JPG?raw=true)
+
+![Crontab](https://github.com/julenarma/AWS/blob/main/Imagenes/CRONTAB/4.JPG?raw=true)
+
+![Crontab](https://github.com/julenarma/AWS/blob/main/Imagenes/CRONTAB/5.JPG?raw=true)
+
+
+# Ejercicio 8. CRONTAB. 
+
+## Documentación:
+
+
 
