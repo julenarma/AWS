@@ -488,8 +488,7 @@ los permisos de ejecución y lo ejecutará en segundo plano.
 
 ``30 20 * * Mon-Fri /etc/test.sh  `` : De Lunes a Viernes a las 20:30
 
-``1 0 1-7 * * [ "$(date '+%a')" = "Fri" ] && /etc/backup.sh `` : A las 00:01 de todos los días del mes 
-entre el 1 y 7 ejecuta el algoritmo.
+``1 0 1-7 * * [ "$(date '+%a')" = "Fri" ] && /etc/backup.sh `` : A las 00:01 de todos los viernes del mes
 
 # Ejercicio 7. CRONTAB. 
 
@@ -511,4 +510,4 @@ entre el 1 y 7 ejecuta el algoritmo.
 ## Documentación:
 
 
-
+![Crontab](https://github.com/julenarma/AWS/blob/main/Imagenes/CRONTAB/6.JPG?raw=true)
