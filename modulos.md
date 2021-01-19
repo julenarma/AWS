@@ -31,11 +31,11 @@ En este módulo, habilita el alojamiento del sitio web de la empresa de ejemplo 
 ## Comprobaciones de estado
 
 
-![Comprobación estado](https://github.com/julenarma/AWS/blob/main/Imagenes/Modulos/1.JPG?raw=true)
-
-
-
-2. Activa el módulo que no esté activo y compruébalo.
-
-
 ![Comprobación estado]()
+
+
+
+1. Activa el módulo que no esté activo y compruébalo.
+
+
+![Comprobación estado](/ path / to / img.jpg)
