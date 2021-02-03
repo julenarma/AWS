@@ -16,9 +16,6 @@
 ## Comprobaciones de estado
 
 
-![Comprobación estado]()
-
-1. Activa el módulo que no esté activo y compruébalo.
 
 
-![Comprobación estado](/path/to/img.jpg)
+![Comprobación estado](https://github.com/julenarma/AWS/blob/main/Imagenes/Modulos/1.JPG?raw=true)
